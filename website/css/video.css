@@ -1,0 +1,324 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+input:focus{
+    border: 0px;
+    outline: none;
+}
+button{
+   border: 0px;
+   background-color: transparent;
+}
+body{
+    height: 100%;
+}
+html{
+    height: 100%;
+}
+/* 顶部图 */
+.guide{   
+    width: 100%;                 
+    background: url(../img/1.png);   
+    height: 24%;
+   /* height: 207px;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.guideline{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*动态下拉列表动画*/
+.active_list_ul{
+    list-style-type: none;
+    height: 0px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.active_list_li{
+    width: 120px;
+    height: 40px;
+    font-weight: normal;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    overflow: visible;
+}
+.active_list_li:hover{
+    background-color:rgb(255, 255, 255);
+    overflow: visible;
+}
+/*导航栏*/
+.guideul{  
+    width: 380px;
+    float: left;
+    list-style-type: none;
+    height:40px;
+    margin-left: 3%;
+}
+.guideli{
+    float:left;
+    height: 40px;
+    font-family: "华文琥珀";
+}
+/*搜索登录框*/
+.guideul2{
+    list-style-type: none;
+    float:right;
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 230px;
+    margin-top: 6px;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.guideli2{
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/* 登录/注册键样式 */
+.login{
+    margin-right: 100px;
+    margin-top: 8px;
+    display: block;
+    background-color: rgba(253, 158, 158, 0.8);
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    box-shadow :1px 1px 1px 1px rgba(253, 158, 158, 0.8);
+    border-radius: 10px;
+    float: right;
+}
+.login:hover{
+    background-color: rgba(253, 158, 158, 1);
+    box-shadow :1px 1px 1px 1px rgba(253, 158, 158, 1);
+}
+/* 登录/注册键超链接 */
+.guidea{
+    text-decoration: none;
+    color: #f6b6b6;
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+div span ul li:hover a{
+    background-color:rgb(255, 255, 255);
+}
+/* 顶部图的span（Tamako.lsg） */
+.title{                        
+    display: block;
+    margin: 0px auto;
+   /* margin-top: 180px;*/
+    width: 50%;
+    font-family: "微软雅黑";
+    font-size: 90px;
+    text-align: center;
+    color:aliceblue;
+    /*-webkit-text-stroke: 1px rgb(0, 255, 128);*/
+    text-shadow: 2px 0px #f6b6b6,0px 2px #6bc3fb;
+}
+.player{
+    margin: 0px auto;
+    margin-top: 5px;
+    width: 1100px;
+    height: 662px;
+}
+.videobox{
+    display: block;
+    margin:0px auto;
+    width: 980px;
+    height: 600px;
+}
+.videodown{
+    width: 980px;
+    height: 440px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+.vdleft{
+    width: 170px;
+    height: 50px;
+    border-left:1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    float: left;
+    cursor: pointer;
+}
+.choose_off{
+    background-color: rgba(253, 158, 158, 1);
+    width: 120px;
+    margin: 0px auto;
+    margin-top: 3px;
+    line-height: 40px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    border: 2px solid rgba(253, 158, 158, 1);
+    border-radius: 10px;
+    user-select:none;
+}
+.choose_on{
+    background-color: white;
+    width: 120px;
+    margin: 0px auto;
+    margin-top: 3px;
+    line-height: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    border: 2px solid rgba(253, 158, 158, 1);
+    border-radius: 10px;
+    user-select:none;
+}
+.vdright{
+    display: block;
+    float: right;
+    width: 807px;
+    height: 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.vdrightspan{
+    display: block;
+    line-height: 50px;
+    float:right;
+    margin-right: 20px;
+}
+.iconimg{
+    display: inline-block;
+    width:30px;
+    height:30px;
+    margin: -5px;
+    margin-left: 3px;
+}
+.episode{
+    width: 980px;
+    height: 100px;
+    margin: 0px auto;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    border-top: 0px solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.episodeul{
+    list-style-type: none;
+    display: none;
+}
+.episodeli{
+    width: 80px;
+    height: 30px;
+    margin-left: 25px;
+    color:black;
+    font-weight: bold;
+    background-color: #f6b6b6;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    float:left;
+    user-select:none;
+}
+.episodeli_on{
+    width: 80px;
+    height: 30px;
+    margin-left: 25px;
+    color:white;
+    font-weight: bold;
+    background-color: rgb(0, 149, 255);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+    float:left;
+    user-select:none;
+}
+.comment_area{
+    width: 978px;
+    height: 500px;
+    margin: 0px auto;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+/*写评论的盒子*/
+.comment{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.head_portrait{
+    display: inline-block;
+    width:60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 10px; 
+    margin-top: 0px;
+}
+.type_area{
+    width:830px;
+    height: 50px;
+    border-radius: 10px;
+    resize:none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.comment_submit{
+    width: 70px;
+    height: 35px;
+    margin-left: 845px;
+    margin-top: 15px;
+    color: white;
+    background-color: #6bc3fb;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.other_comment{
+    margin-top: 40px;
+    margin-left: 20px; 
+}
+.ocomment{
+    margin-top: 50px;
+    position: relative;
+}
+.username{
+    display: inline-block;
+    font-size: 10px;
+    color: #6bc3fb;
+    font-weight: bold;
+    position: absolute;
+}
+.content{
+    resize:none;
+    width: 830px;
+    height: 50px;
+    outline: none;
+    border: none;
+    padding-top: 20px;
+    /*margin-top: 30px;*/
+}
+.content::focus{
+    outline: none;
+}
+.timediv{
+    display: block;
+    Color:gray;
+    float:right;
+    margin-right: 50px;
+}
+.foot{
+    width: 1517px;
+    border: 1px solid black;
+    height: 100px;
+    background-color: black;
+    margin: 0px auto;
+    color: white;
+}
+

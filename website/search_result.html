@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/search_result.css" rel="stylesheet" text="text/css">
+    <script src="js/search_result.js"></script>
+    <title>search_result</title>
+</head>
+<body>
+    <a id="topAnchor"></a>
+    <div class="guide">
+        <span class="guideline">
+            <ul class="guideul">
+                <li class="guideli" style="width:70px"><img src="img/head_portrait2.jpg" style="border-radius: 100%; margin-left: 20px;width: 35px; height: 35px;margin-top: 2px;" align="middle"></li>
+                <li class="guideli" style="width:70px"><a href="index.html" class="guidea" >首页</a></li>
+                <li class="guideli" style="width:70px"><a href="anime_set.html" class="guidea">番组</a></li>
+                <li class="guideli" style="width: 120px;"><a style="cursor: pointer;" class="guidea" onmouseover="active_list()" onmouseleave="active_list_off()">
+                    新番时间表
+                    <ul class="active_list_ul">
+                        <li class="active_list_li" onclick="jump()">2022年1月新番</li>
+                        <li class="active_list_li" onclick="jump()">2022年4月新番</li>
+                        <li class="active_list_li" onclick="jump()">2022年7月新番</li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>  
+            <span class="login"><a href="login.html" target="_blank" style="text-decoration: none; color:white">登录/注册</a></span>
+            <ul class="guideul2">
+                <li class="guideli2" style="height:20px;"><input type="text" placeholder="输入什么叭" style="border:0px;background-color:transparent;"></li>
+                <li style="width:20px;height: 20px; text-align: center;color: rgba(0, 0, 0, 0.6); " class=guideli2>|</li>
+                <li class="guideli2"><button type="button" style="cursor:pointer; line-height: 20px;"id="search"><img src="img/inco_search.png" style="width: 15px; 
+                    height: 15px;margin-top: 2px;margin-top: 4.5px;" onclick="jump_search_result()"></button></li> 
+            </ul>
+        </span>
+        <span class="title">Tamako.lsg</span>
+    </div>
+    <div class="result">
+        <p style="text-align:center;font-size: 30px;margin-top: 10px;">什么都没找到呢`(*>﹏<*)′</p>
+        <div class="main">
+                <img src="img/icon2.png" class="iconimg" alt="">
+                <span class="introspan">上季度热门新番推荐</span>
+                <hr>
+                <div class="maindiv" style="margin-left:0px;">
+                    <img src="img/last season advice1.png">
+                    <span class="mainspan">JOJO奇妙冒险 石之海 [共12集]</span>
+                </div>
+                <div class="maindiv">
+                    <img src="img/last season advice2.png">
+                    <span class="mainspan">明日同学的水手服 [共12集]</span>
+                </div>
+                <div class="maindiv">
+                    <img src="img/last season advice3.png">
+                    <span class="mainspan">怪人开发部的黑井津 [共12集]</span>
+                </div>
+                <div class="maindiv" style="margin-left:0px;">
+                    <img src="img/last season advice5.png">
+                    <span class="mainspan">东京24区 [共12集]</span>
+                </div>
+                <div class="maindiv">
+                    <img src="img/last season advice6.png">
+                    <span class="mainspan">鬼灭之刃 游郭篇[共11集]</span>
+                </div>
+                <div class="maindiv">
+                    <img src="img/last season advice7.png">
+                    <span class="mainspan">与变成异世界美少女的大叔一起冒险</span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                   <span style="line-height: 100px; float: left;margin-left: 150px; font-size: 10px;">@20xx - 2050 玉子番场 - Tamako.lsg</span>
+                   <span style="line-height:100px; float: right; margin-right: 250px; font-size: 10px;"><a href="#topAnchor" style="color:white;">回到顶部</a></span>
+                   <span style="line-height: 100px; float: right; margin-right: 50px; font-size: 10px;"><a href="contact_us.html" style="color:white">联系我们</a></span>
+            </div>
+        </footer>
+</body>
+</html>

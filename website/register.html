@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link href="css/register.css" rel="stylesheet" type="text/css">
+    <script src="js/register.js"></script>
+</head>
+<body>
+    <div class="bkg">
+        <div class="main">
+        <span class="title">
+            Tamako.lsg
+        </span>
+        <form id="myfrm">
+            <table class="mytb">
+                <tr>
+                    <td style="border-bottom:1px solid black; padding-left: 10px;"><b>用户名</b>&nbsp;&nbsp;&nbsp;<input type="text"  style="width: 330px;"  id="name" name="Name" autocomplete="off" placeholder="请输入您的用户名"></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid black; padding-left: 10px;"><b>邮箱</b>&nbsp;&nbsp;&nbsp;<input type="email"  style="width: 330px;" id="account" name="account" autocomplete="off" placeholder="请输入您的邮箱"></td>
+                </tr>
+                <tr>
+                    <td style="border-bottom:1px solid black; padding-left: 10px;"><b>密码</b>&nbsp;&nbsp;&nbsp;<input type="password" style="width: 330px;" id="password" name="password"  autocomplete="off" placeholder="请输入您的密码"></td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 10px;"><b>确认密码</b>&nbsp;&nbsp;&nbsp;<input type="password"  style="width: 330px;" id="ensure_password" name="ensure_password" autocomplete="off" placeholder="请确认您的密码"></td>
+                </tr>     
+            </table>
+            <div class="mydiv">
+                 <button type="button"  id="btregister"  class="btregister" onclick="information_of_registration_get()">注册</button>
+             </div>
+            </form>
+        </div>
+        </div>
+</body>
+</html>

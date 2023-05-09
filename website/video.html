@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedio</title>
+    <link href="css/video.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <a id="topAnchor"></a>
+    <div class="guide">
+        <span class="guideline">
+            <ul class="guideul">
+                <li class="guideli" style="width:70px"><img src="img/head_portrait2.jpg" style="border-radius: 100%; margin-left: 20px;width: 35px; height: 35px;margin-top: 2px;" align="middle"></li>
+                <li class="guideli" style="width:70px"><a href="index.html" class="guidea" >首页</a></li>
+                <li class="guideli" style="width:70px"><a href="anime_set.html" class="guidea">番组</a></li>
+                <li class="guideli" style="width: 120px;"><a style="cursor: pointer;" class="guidea" onmouseover="active_list()" onmouseleave="active_list_off()">
+                    新番时间表
+                    <ul class="active_list_ul">
+                        <li class="active_list_li" onclick="jump()">2022年1月新番</li>
+                        <li class="active_list_li" onclick="jump()">2022年4月新番</li>
+                        <li class="active_list_li" onclick="jump()">2022年7月新番</li>
+                    </ul>
+                    </a>
+                </li>
+            </ul>  
+            <span class="login"><a href="login.html" target="_blank" style="text-decoration: none; color:white">登录/注册</a></span>
+            <ul class="guideul2">
+                <li class="guideli2" style="height:20px;"><input type="text" placeholder="输入什么叭" style="border:0px;background-color:transparent;"></li>
+                <li style="width:20px;height: 20px; text-align: center;color: rgba(0, 0, 0, 0.6); " class=guideli2>|</li>
+                <li class="guideli2"><button type="button" style="cursor:pointer; line-height: 20px;"id="search"><img src="img/inco_search.png" style="width: 15px; 
+                    height: 15px;margin-top: 2px;margin-top: 4.5px;" onclick="jump_search_result()"></button></li> 
+            </ul>
+        </span>
+        <span class="title">Tamako.lsg</span>
+    </div>
+    <h2 align="center" style="margin:5px; margin-bottom: -20px;">间谍过家家 第九集</h2>
+    <div class="player">
+        <video src="video/[Erai-raws] Spy x Family - 09 [1080p][HEVC][Multiple Subtitle][D2BF8499]_x264.mp4" autoplay="autoplay" controls="controls" class="videobox"></video>
+        <div class="videodown">
+            <div class="vdleft" id="choose_episode" onclick="change()">
+                    <div class="choose_off" id="choose">选集</div>
+            </div>
+            <div class="vdright">
+                <span class="vdrightspan" title="登录后才可点赞">点赞<img src="img/icon4.png" class="iconimg"></span>
+                <span class="vdrightspan" title="登录后才可收藏">收藏<img src="img/icon5.png" class="iconimg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="episode" id="episode">
+        <ul class="episodeul" id="eul">
+            <li class="episodeli">第一集</li>
+            <li class="episodeli">第二集</li>
+            <li class="episodeli">第三集</li>
+            <li class="episodeli">第四集</li>
+            <li class="episodeli">第五集</li>
+            <li class="episodeli">第六集</li>
+            <li class="episodeli">第七集</li>
+            <li class="episodeli">第八集</li>
+            <li class="episodeli_on">第九集</li>
+            <li class="episodeli">第十集</li>
+        </ul>
+    </div>
+    <div class="comment_area">
+        <h3 style="margin-top: 20px; margin-left: 15px;">评论区</h3>
+        <div class="comment">
+            <img src="img/head_portrait.jpeg" class="head_portrait">
+            <textarea class="type_area" placeholder="发表一下感想叭"></textarea>
+            <form id="frm_comment"></form>
+            <input type="submit" class="comment_submit" value="提交" title="登录后才可以发表评论哦"></input>
+        </div>
+        <div class="other_comment">
+            <div class="ocomment">
+                <img src="img/head_portrait2.jpg" class="head_portrait"><div class="username">北白川玉子</div>
+                <textarea class="content"  readonly="readonly">这个番实在是太好看啦！！ </textarea>
+                <div class="timediv">11年11月45日</div>
+            </div>
+            <div class="ocomment">
+                <img src="img/head_portrait2.jpg" class="head_portrait"><div class="username">大路玉子</div>
+                <textarea class="content"  readonly="readonly">年度霸权！！ </textarea>
+                <div class="timediv">11年11月45日</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+               <span style="line-height: 100px; float: left;margin-left: 150px; font-size: 10px;">@20xx - 2050 玉子番场 - Tamako.lsg</span>
+               <span style="line-height:100px; float: right; margin-right: 250px; font-size: 10px;"><a href="#topAnchor" style="color:white;">回到顶部</a></span>
+               <span style="line-height: 100px; float: right; margin-right: 50px; font-size: 10px;"><a href="contact_us.html" style="color:white">联系我们</a></span>
+        </div>
+    </footer>
+</body>
+<script src="js/video.js"></script>
+</html>

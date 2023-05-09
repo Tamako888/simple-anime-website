@@ -1,0 +1,109 @@
+input{
+    border: 0px;
+    background-color: transparent;
+}
+input:focus{
+    border: 0px;
+    outline: none;
+    background-color: transparent;
+}
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+button{
+    border:0px;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.bkg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.bkg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/backGround.jpg);
+    z-index: -1000;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter:blur(3px);
+}
+.mytb{
+    border: 3px solid rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-left: 585px;
+    width: 400px;
+    height: 80px;
+}
+.mydiv{
+    width: 400px;
+    margin-left: 585px;
+    margin-top: 15px;
+}
+
+.btregister{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    float:left; background-color: white;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-size: 20px;
+}
+.btlogin{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    float:right; 
+    background-color: rgba(22, 115, 246, 0.84); 
+    border:1px solid rgba(22, 115, 246, 0.84);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+.btregister:hover{
+    border: 1px solid rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.btlogin:hover{
+    background-color: rgb(102, 173, 254);
+    border: 1px solid rgb(102, 173, 254);
+    cursor: pointer;
+}
+.title{                 
+    display: block;
+    /*margin: 0px auto;*/
+    margin-top: 160px;
+    margin-left: 550px;
+    margin-bottom: 30px;
+    width: 50%;
+    font-family: "微软雅黑";
+    font-size: 90px;
+    color:aliceblue;
+    /*-webkit-text-stroke: 1px rgb(0, 255, 128);*/
+    text-shadow: 2px 0px #f6b6b6,0px 2px #6bc3fb;
+}
+.main{
+    position: absolute;
+}
